@@ -6,6 +6,7 @@ COPY package.json .
 COPY bun.lockb .
 
 RUN bun install
+RUN npm i sqlite3 --save
 
 COPY src src
 COPY database.db .
